@@ -1,0 +1,8 @@
+<div>
+    <button class="button button-nav" *ngIf="this.selectedButton == 1 && showSubButtons" (click)="callAPI(1)">Sub Button 1</button>
+    <button class="button button-nav" *ngIf="this.selectedButton == 2 && showSubButtons" (click)="callAPI(2)">Sub Button 2</button>
+    <button class="button button-nav" *ngIf="this.selectedButton == 3 && showSubButtons" (click)="callAPI(3)">Sub Button 3</button>
+  </div>
+  
+  <textarea *ngIf="responseData">{{ responseData }}</textarea>
+  
